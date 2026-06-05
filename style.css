@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+}
+
+/* Navbar */
+header {
+  position: fixed;
+  width: 100%;
+  background: #111827;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #38bdf8;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero span {
+  color: #38bdf8;
+}
+
+.btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #38bdf8;
+  color: black;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: white;
+  transform: scale(1.05);
+}
+
+/* Sections */
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+/* Projects */
+.project-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: #334155;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111827;
+}
